@@ -1,0 +1,37 @@
+[paths]
+default = https://brian@code.dev.silvercloudhealth.com/hg/platform/main/
+
+[extensions]
+mercurial_keyring =
+
+
+[ui]
+username = brian
+ssh = ssh -C
+
+[extensions]
+hgext.mq =
+
+[hostsecurity]
+code.dev.silvercloudhealth.com:fingerprints = sha256:18:8E:ED:04:11:83:4A:97:19:66:73:CD:FE:19:1A:71:B2:A7:86:8E:68:66:43:E0:12:36:1F:64:4C:63:D9:C6
+
+[extensions]
+hgext.extdiff =
+
+#[extdiff]
+#cmd.kdiff3 =
+
+[ui]
+merge = kdiff3
+editor=nano
+
+[merge-tools]
+kdiff3.args = $base $local $other -o $output
+i#kdiff3.premerge = False
+
+[pager]
+pager = LESS='FRX' less
+
+
+
+

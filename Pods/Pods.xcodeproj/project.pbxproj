@@ -1,0 +1,1110 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01C8C98B880E41D659654E4A8959E332 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
+		1213CD540DEE4ED8C07CD3B9BCA8096F /* SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 796266855BD48C83CDBD4C73971B6969 /* SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		15A59E0DF447FBA57754150A415F0D65 /* SimpleKeychain-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4260766083F93E4F7B556CD96AF46670 /* SimpleKeychain-dummy.m */; };
+		1E4F1E09A3B6F5281D2C9F0CD0062372 /* Pods-Watch-app Extension-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A4A1360FDB7ADB3A459AEB617A7A8FC7 /* Pods-Watch-app Extension-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2E7ADCF8480C92A2E3BE1B67EB29904E /* Pods-SilverCloudTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BF0D62F1C0AA771897AC5493F1AC772 /* Pods-SilverCloudTests-dummy.m */; };
+		3349E74822D04F4DC3A3DEEF3F608978 /* Pods-SilverCloud-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 428B83319C470367314EAE25BB4E04C7 /* Pods-SilverCloud-dummy.m */; };
+		336AB8B5B6AB68078E43159554EA2725 /* Pods-SilverCloudTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B87A178FD0DF34A3E0761A3F17EBE3D7 /* Pods-SilverCloudTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		392A5ED278DBDC449C77C0067E70F17A /* A0SimpleKeychain+KeyPair.m in Sources */ = {isa = PBXBuildFile; fileRef = 101A8B92ACCE58505A93A18FE1AF26BD /* A0SimpleKeychain+KeyPair.m */; };
+		4830531C888C0C45252DDBA832A4F4B5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		6B1DAF21F687D8D92604152842846670 /* A0SimpleKeychain+KeyPair.h in Headers */ = {isa = PBXBuildFile; fileRef = 34A7B0C609DAF39937C9632620651FC4 /* A0SimpleKeychain+KeyPair.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E7DB770131F25120EF4D8340228F2FF /* SimpleKeychain-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EBE41635541D5F81EE2E5F7B3068529F /* SimpleKeychain-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		79FC0BC8F4F3E505ABECF63A042349E0 /* Pods-SilverCloud-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 25235C51EBFB27C1D4E5DCED2F266E19 /* Pods-SilverCloud-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C86A13330C35B4C5D686689F74432CE /* A0SimpleKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 04AC0259A2F505271821FB8BFFBB14B6 /* A0SimpleKeychain.m */; };
+		9090D2188558E5F3B2D475D23073645A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		A4A2695DD029D6246C209220F39778C4 /* Pods-Watch-app Extension-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AC38A862D8A9E888C607606590701812 /* Pods-Watch-app Extension-dummy.m */; };
+		A4FB1FA3E186DD63EEEF808CAF6FDA34 /* Pods-Watch-app-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CF0643B344D97F36C61529118B2E7801 /* Pods-Watch-app-dummy.m */; };
+		C67C3EF0C8D02DC503A0FE3D49B59D80 /* A0SimpleKeychain.h in Headers */ = {isa = PBXBuildFile; fileRef = 029225BE6E66FDE52010E774BA974EB0 /* A0SimpleKeychain.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBBD69455C902AB309BF1E8518CAD327 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */; };
+		D40BFB9BA3D961430DCE1506703EAC23 /* Pods-Watch-app-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1D488D4279FA31F2CE0B09575450AD86 /* Pods-Watch-app-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0DF87B52D6E25125E9CC22E8AD96F18 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A89C6B7C345E42EDB18B3BCC6F401F84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3B577E1B5738C86902E67ED1203AC76E;
+			remoteInfo = "Pods-SilverCloud";
+		};
+		E26A483FE60BF99FEEC943D7ED6193BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 192AEFA366AAFE1F45B918C022FE489C;
+			remoteInfo = SimpleKeychain;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00FF4DF99EB3A385B936BFB1DD9227CF /* Pods-Watch-app Extension-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watch-app Extension-Info.plist"; sourceTree = "<group>"; };
+		029225BE6E66FDE52010E774BA974EB0 /* A0SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = A0SimpleKeychain.h; path = SimpleKeychain/A0SimpleKeychain.h; sourceTree = "<group>"; };
+		04AC0259A2F505271821FB8BFFBB14B6 /* A0SimpleKeychain.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = A0SimpleKeychain.m; path = SimpleKeychain/A0SimpleKeychain.m; sourceTree = "<group>"; };
+		04AE0D454216CE501F4E539ACE506ECB /* Pods-SilverCloudTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SilverCloudTests.release.xcconfig"; sourceTree = "<group>"; };
+		063A4085540745545A013A87F0F8EAF4 /* Pods-Watch-app Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch-app Extension.release.xcconfig"; sourceTree = "<group>"; };
+		088FA66A25834FE0DF6FFCC0851180DF /* Pods-Watch-app-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watch-app-Info.plist"; sourceTree = "<group>"; };
+		0B8018CEEA682F28151C31FC53640D1C /* Pods-SilverCloudTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SilverCloudTests-Info.plist"; sourceTree = "<group>"; };
+		101A8B92ACCE58505A93A18FE1AF26BD /* A0SimpleKeychain+KeyPair.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "A0SimpleKeychain+KeyPair.m"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.m"; sourceTree = "<group>"; };
+		1D488D4279FA31F2CE0B09575450AD86 /* Pods-Watch-app-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Watch-app-umbrella.h"; sourceTree = "<group>"; };
+		2222882638886CDD1A0380919539C615 /* Pods-Watch-app.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Watch-app.modulemap"; sourceTree = "<group>"; };
+		25235C51EBFB27C1D4E5DCED2F266E19 /* Pods-SilverCloud-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SilverCloud-umbrella.h"; sourceTree = "<group>"; };
+		2EAD4C5C3066D1303CA867DC84AA1990 /* Pods-SilverCloud-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SilverCloud-acknowledgements.markdown"; sourceTree = "<group>"; };
+		34A7B0C609DAF39937C9632620651FC4 /* A0SimpleKeychain+KeyPair.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "A0SimpleKeychain+KeyPair.h"; path = "SimpleKeychain/A0SimpleKeychain+KeyPair.h"; sourceTree = "<group>"; };
+		3B1F8B8457DE5CF2E46D12F5A4BC9055 /* Pods-SilverCloud-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SilverCloud-frameworks.sh"; sourceTree = "<group>"; };
+		4260766083F93E4F7B556CD96AF46670 /* SimpleKeychain-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SimpleKeychain-dummy.m"; sourceTree = "<group>"; };
+		428B83319C470367314EAE25BB4E04C7 /* Pods-SilverCloud-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SilverCloud-dummy.m"; sourceTree = "<group>"; };
+		4706FEC4F77257525BE5626C23C45B53 /* Pods_SilverCloudTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SilverCloudTests.framework; path = "Pods-SilverCloudTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		47484D6FB1D9E4C5B16DFBC0A009A598 /* Pods-SilverCloudTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SilverCloudTests.modulemap"; sourceTree = "<group>"; };
+		495B4483706558D5A263668E34B121C4 /* Pods-Watch-app-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Watch-app-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5716C109EF3073C0EBD015D9A7ABE9F3 /* SimpleKeychain.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SimpleKeychain.xcconfig; sourceTree = "<group>"; };
+		5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5BF0D62F1C0AA771897AC5493F1AC772 /* Pods-SilverCloudTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SilverCloudTests-dummy.m"; sourceTree = "<group>"; };
+		6183DB04CD1D8A16B4264ABD98317A90 /* Pods-SilverCloud-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SilverCloud-Info.plist"; sourceTree = "<group>"; };
+		6B177B9DBA26A190910B340128E4DABF /* Pods-Watch-app-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watch-app-acknowledgements.plist"; sourceTree = "<group>"; };
+		796266855BD48C83CDBD4C73971B6969 /* SimpleKeychain.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SimpleKeychain.h; path = SimpleKeychain/SimpleKeychain.h; sourceTree = "<group>"; };
+		79B026991787987023C682451A73D29B /* SimpleKeychain-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SimpleKeychain-Info.plist"; sourceTree = "<group>"; };
+		7A074442EC314E746595B53D6032F536 /* Pods-SilverCloudTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SilverCloudTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7F0072C9AF60302A93F56C6CFB916B4B /* Pods-SilverCloud.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SilverCloud.modulemap"; sourceTree = "<group>"; };
+		7F29BAC867FAAEA5ED6F3B5E2FC5020F /* Pods_SilverCloud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_SilverCloud.framework; path = "Pods-SilverCloud.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		804469FB8F17BF326D8713E39F695093 /* Pods-Watch-app Extension-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-Watch-app Extension-acknowledgements.markdown"; sourceTree = "<group>"; };
+		86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS5.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8D2150ED1E1407EB0ABAC34C39EC082B /* Pods-SilverCloud-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SilverCloud-acknowledgements.plist"; sourceTree = "<group>"; };
+		8EBD560E21F45637F8766E81B7A33A45 /* Pods-SilverCloudTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SilverCloudTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8F4493295212BEDBE4C739026F6CADAB /* Pods-Watch-app.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch-app.debug.xcconfig"; sourceTree = "<group>"; };
+		9837BD7B3074D2898F411C57F6C76BFA /* SimpleKeychain-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-prefix.pch"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A48B61794164EC679BDB74B7C01283E0 /* Pods-SilverCloud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SilverCloud.release.xcconfig"; sourceTree = "<group>"; };
+		A4A1360FDB7ADB3A459AEB617A7A8FC7 /* Pods-Watch-app Extension-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-Watch-app Extension-umbrella.h"; sourceTree = "<group>"; };
+		AC38A862D8A9E888C607606590701812 /* Pods-Watch-app Extension-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Watch-app Extension-dummy.m"; sourceTree = "<group>"; };
+		AEF71896F982F1DFCF1353D677627F0C /* Pods-SilverCloud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SilverCloud.debug.xcconfig"; sourceTree = "<group>"; };
+		B87A178FD0DF34A3E0761A3F17EBE3D7 /* Pods-SilverCloudTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SilverCloudTests-umbrella.h"; sourceTree = "<group>"; };
+		B9F8750436C0C95EDA19289FDA90F31D /* Pods-SilverCloudTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SilverCloudTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		CD3B027EC578E22891ED55C05705F3CD /* SimpleKeychain.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SimpleKeychain.framework; path = SimpleKeychain.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF0643B344D97F36C61529118B2E7801 /* Pods-Watch-app-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-Watch-app-dummy.m"; sourceTree = "<group>"; };
+		DB67EF726C753D79FE49838022304525 /* Pods-Watch-app.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch-app.release.xcconfig"; sourceTree = "<group>"; };
+		E04E1841C135A401A8EDBC575CD85B37 /* Pods-Watch-app Extension-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-Watch-app Extension-acknowledgements.plist"; sourceTree = "<group>"; };
+		E97F87A17DEA14C2D1939196805CE401 /* Pods-Watch-app Extension.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-Watch-app Extension.modulemap"; sourceTree = "<group>"; };
+		E9CA0BD2C269FAE97C53F7B44182295C /* Pods_Watch_app.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Watch_app.framework; path = "Pods-Watch-app.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBE41635541D5F81EE2E5F7B3068529F /* SimpleKeychain-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SimpleKeychain-umbrella.h"; sourceTree = "<group>"; };
+		F3006B1669466F7741533FE4D6823349 /* Pods-Watch-app Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-Watch-app Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		F55EB12DE4AF1BFFE9D6E034A959FF1F /* SimpleKeychain.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SimpleKeychain.modulemap; sourceTree = "<group>"; };
+		F838F478490E911CBFF7956EC2EC5DB5 /* Pods_Watch_app_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_Watch_app_Extension.framework; path = "Pods-Watch-app Extension.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6765C35083B2C782EC05E489B3910378 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBBD69455C902AB309BF1E8518CAD327 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B79CA5944535923740EE462B77F1BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4830531C888C0C45252DDBA832A4F4B5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7D5220F52D35CAA5216FE1C4E01B7619 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0DF87B52D6E25125E9CC22E8AD96F18 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC2D466AF9AF5B1597599615F2FC2866 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01C8C98B880E41D659654E4A8959E332 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7FC148312350EB7BAB609F34CB8A7B4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9090D2188558E5F3B2D475D23073645A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				5ADBF5E8B7047831DCFB355C966E47AD /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		2F255EF1827BE84FE1FB9913D84C5DE9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E032F2868BD95FE1107FB2FD146400F6 /* Pods-SilverCloud */,
+				8B03840209AD90BA1256DCA10D75C94D /* Pods-SilverCloudTests */,
+				8A1076B589546031B351A2F0C51A3BDC /* Pods-Watch-app */,
+				F94856C602E4060F0E4B5389EE7D1C48 /* Pods-Watch-app Extension */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		4065B453848C442EB922C852E99C39A8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE3133DC678F8FAC7460CB749A6C084C /* SimpleKeychain */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		43085B5EC92BA9333228B94389FFA518 /* watchOS */ = {
+			isa = PBXGroup;
+			children = (
+				86FE31D69E844FBC226419FFD908E6D2 /* Foundation.framework */,
+			);
+			name = watchOS;
+			sourceTree = "<group>";
+		};
+		54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C8DCC9952E5DB2860D73C3A913F1CC2 /* iOS */,
+				43085B5EC92BA9333228B94389FFA518 /* watchOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8A1076B589546031B351A2F0C51A3BDC /* Pods-Watch-app */ = {
+			isa = PBXGroup;
+			children = (
+				2222882638886CDD1A0380919539C615 /* Pods-Watch-app.modulemap */,
+				495B4483706558D5A263668E34B121C4 /* Pods-Watch-app-acknowledgements.markdown */,
+				6B177B9DBA26A190910B340128E4DABF /* Pods-Watch-app-acknowledgements.plist */,
+				CF0643B344D97F36C61529118B2E7801 /* Pods-Watch-app-dummy.m */,
+				088FA66A25834FE0DF6FFCC0851180DF /* Pods-Watch-app-Info.plist */,
+				1D488D4279FA31F2CE0B09575450AD86 /* Pods-Watch-app-umbrella.h */,
+				8F4493295212BEDBE4C739026F6CADAB /* Pods-Watch-app.debug.xcconfig */,
+				DB67EF726C753D79FE49838022304525 /* Pods-Watch-app.release.xcconfig */,
+			);
+			name = "Pods-Watch-app";
+			path = "Target Support Files/Pods-Watch-app";
+			sourceTree = "<group>";
+		};
+		8B03840209AD90BA1256DCA10D75C94D /* Pods-SilverCloudTests */ = {
+			isa = PBXGroup;
+			children = (
+				47484D6FB1D9E4C5B16DFBC0A009A598 /* Pods-SilverCloudTests.modulemap */,
+				7A074442EC314E746595B53D6032F536 /* Pods-SilverCloudTests-acknowledgements.markdown */,
+				B9F8750436C0C95EDA19289FDA90F31D /* Pods-SilverCloudTests-acknowledgements.plist */,
+				5BF0D62F1C0AA771897AC5493F1AC772 /* Pods-SilverCloudTests-dummy.m */,
+				0B8018CEEA682F28151C31FC53640D1C /* Pods-SilverCloudTests-Info.plist */,
+				B87A178FD0DF34A3E0761A3F17EBE3D7 /* Pods-SilverCloudTests-umbrella.h */,
+				8EBD560E21F45637F8766E81B7A33A45 /* Pods-SilverCloudTests.debug.xcconfig */,
+				04AE0D454216CE501F4E539ACE506ECB /* Pods-SilverCloudTests.release.xcconfig */,
+			);
+			name = "Pods-SilverCloudTests";
+			path = "Target Support Files/Pods-SilverCloudTests";
+			sourceTree = "<group>";
+		};
+		A602438F29264F99DF643E637F2A2C0B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7F29BAC867FAAEA5ED6F3B5E2FC5020F /* Pods_SilverCloud.framework */,
+				4706FEC4F77257525BE5626C23C45B53 /* Pods_SilverCloudTests.framework */,
+				E9CA0BD2C269FAE97C53F7B44182295C /* Pods_Watch_app.framework */,
+				F838F478490E911CBFF7956EC2EC5DB5 /* Pods_Watch_app_Extension.framework */,
+				CD3B027EC578E22891ED55C05705F3CD /* SimpleKeychain.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AE3133DC678F8FAC7460CB749A6C084C /* SimpleKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				029225BE6E66FDE52010E774BA974EB0 /* A0SimpleKeychain.h */,
+				04AC0259A2F505271821FB8BFFBB14B6 /* A0SimpleKeychain.m */,
+				34A7B0C609DAF39937C9632620651FC4 /* A0SimpleKeychain+KeyPair.h */,
+				101A8B92ACCE58505A93A18FE1AF26BD /* A0SimpleKeychain+KeyPair.m */,
+				796266855BD48C83CDBD4C73971B6969 /* SimpleKeychain.h */,
+				FB6EE112EF2D0A01DC21AA89FEBEF3E0 /* Support Files */,
+			);
+			name = SimpleKeychain;
+			path = SimpleKeychain;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				54CCD06893F300F5B2C02DAFD57093E1 /* Frameworks */,
+				4065B453848C442EB922C852E99C39A8 /* Pods */,
+				A602438F29264F99DF643E637F2A2C0B /* Products */,
+				2F255EF1827BE84FE1FB9913D84C5DE9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		E032F2868BD95FE1107FB2FD146400F6 /* Pods-SilverCloud */ = {
+			isa = PBXGroup;
+			children = (
+				7F0072C9AF60302A93F56C6CFB916B4B /* Pods-SilverCloud.modulemap */,
+				2EAD4C5C3066D1303CA867DC84AA1990 /* Pods-SilverCloud-acknowledgements.markdown */,
+				8D2150ED1E1407EB0ABAC34C39EC082B /* Pods-SilverCloud-acknowledgements.plist */,
+				428B83319C470367314EAE25BB4E04C7 /* Pods-SilverCloud-dummy.m */,
+				3B1F8B8457DE5CF2E46D12F5A4BC9055 /* Pods-SilverCloud-frameworks.sh */,
+				6183DB04CD1D8A16B4264ABD98317A90 /* Pods-SilverCloud-Info.plist */,
+				25235C51EBFB27C1D4E5DCED2F266E19 /* Pods-SilverCloud-umbrella.h */,
+				AEF71896F982F1DFCF1353D677627F0C /* Pods-SilverCloud.debug.xcconfig */,
+				A48B61794164EC679BDB74B7C01283E0 /* Pods-SilverCloud.release.xcconfig */,
+			);
+			name = "Pods-SilverCloud";
+			path = "Target Support Files/Pods-SilverCloud";
+			sourceTree = "<group>";
+		};
+		F94856C602E4060F0E4B5389EE7D1C48 /* Pods-Watch-app Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E97F87A17DEA14C2D1939196805CE401 /* Pods-Watch-app Extension.modulemap */,
+				804469FB8F17BF326D8713E39F695093 /* Pods-Watch-app Extension-acknowledgements.markdown */,
+				E04E1841C135A401A8EDBC575CD85B37 /* Pods-Watch-app Extension-acknowledgements.plist */,
+				AC38A862D8A9E888C607606590701812 /* Pods-Watch-app Extension-dummy.m */,
+				00FF4DF99EB3A385B936BFB1DD9227CF /* Pods-Watch-app Extension-Info.plist */,
+				A4A1360FDB7ADB3A459AEB617A7A8FC7 /* Pods-Watch-app Extension-umbrella.h */,
+				F3006B1669466F7741533FE4D6823349 /* Pods-Watch-app Extension.debug.xcconfig */,
+				063A4085540745545A013A87F0F8EAF4 /* Pods-Watch-app Extension.release.xcconfig */,
+			);
+			name = "Pods-Watch-app Extension";
+			path = "Target Support Files/Pods-Watch-app Extension";
+			sourceTree = "<group>";
+		};
+		FB6EE112EF2D0A01DC21AA89FEBEF3E0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F55EB12DE4AF1BFFE9D6E034A959FF1F /* SimpleKeychain.modulemap */,
+				5716C109EF3073C0EBD015D9A7ABE9F3 /* SimpleKeychain.xcconfig */,
+				4260766083F93E4F7B556CD96AF46670 /* SimpleKeychain-dummy.m */,
+				79B026991787987023C682451A73D29B /* SimpleKeychain-Info.plist */,
+				9837BD7B3074D2898F411C57F6C76BFA /* SimpleKeychain-prefix.pch */,
+				EBE41635541D5F81EE2E5F7B3068529F /* SimpleKeychain-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SimpleKeychain";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		406553B34337387B6BBE765BA1DA25E5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79FC0BC8F4F3E505ABECF63A042349E0 /* Pods-SilverCloud-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69DC21A3BB1BCFA5247901004A809B39 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6B1DAF21F687D8D92604152842846670 /* A0SimpleKeychain+KeyPair.h in Headers */,
+				C67C3EF0C8D02DC503A0FE3D49B59D80 /* A0SimpleKeychain.h in Headers */,
+				6E7DB770131F25120EF4D8340228F2FF /* SimpleKeychain-umbrella.h in Headers */,
+				1213CD540DEE4ED8C07CD3B9BCA8096F /* SimpleKeychain.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6DB28C90C5F0EC79F3943F658A080E1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D40BFB9BA3D961430DCE1506703EAC23 /* Pods-Watch-app-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BD458AEDC383D2CAF807D1421453A14D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E4F1E09A3B6F5281D2C9F0CD0062372 /* Pods-Watch-app Extension-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C2DFCDD565A49FF97BC926C3A9C48EFF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				336AB8B5B6AB68078E43159554EA2725 /* Pods-SilverCloudTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		192AEFA366AAFE1F45B918C022FE489C /* SimpleKeychain */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1300C8DA04E595AEB3AA5F626B7D390D /* Build configuration list for PBXNativeTarget "SimpleKeychain" */;
+			buildPhases = (
+				69DC21A3BB1BCFA5247901004A809B39 /* Headers */,
+				9626DC5776B7E2D6A3CA83916C17D617 /* Sources */,
+				F7FC148312350EB7BAB609F34CB8A7B4 /* Frameworks */,
+				5BEE9D6E18FA82766FDCDBBD12FA57D8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SimpleKeychain;
+			productName = SimpleKeychain;
+			productReference = CD3B027EC578E22891ED55C05705F3CD /* SimpleKeychain.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2C656C435866349EDD6C26AD21773620 /* Pods-Watch-app Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9278E77374A93D0790F9F4CF7CDE180A /* Build configuration list for PBXNativeTarget "Pods-Watch-app Extension" */;
+			buildPhases = (
+				BD458AEDC383D2CAF807D1421453A14D /* Headers */,
+				F6B114C42CA4DFCBBB3C99DA4D9D26FB /* Sources */,
+				7D5220F52D35CAA5216FE1C4E01B7619 /* Frameworks */,
+				683314E0687DBBE4921B49D6FCE4E70D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Watch-app Extension";
+			productName = "Pods-Watch-app Extension";
+			productReference = F838F478490E911CBFF7956EC2EC5DB5 /* Pods_Watch_app_Extension.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3653B0E65CD0D4A0BC44D147627D2FBC /* Pods-Watch-app */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8981066DF96AFCD69CD18BACD4E8508F /* Build configuration list for PBXNativeTarget "Pods-Watch-app" */;
+			buildPhases = (
+				A6DB28C90C5F0EC79F3943F658A080E1 /* Headers */,
+				10476431B5B9002367DB55D68C9540C7 /* Sources */,
+				EC2D466AF9AF5B1597599615F2FC2866 /* Frameworks */,
+				9FC6AA0E18654F22AE4DF8B7F7C29106 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-Watch-app";
+			productName = "Pods-Watch-app";
+			productReference = E9CA0BD2C269FAE97C53F7B44182295C /* Pods_Watch_app.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3AAED5D1C79506009B5048819E8EF655 /* Pods-SilverCloudTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C97BE778664C73AD9F049909CB87462B /* Build configuration list for PBXNativeTarget "Pods-SilverCloudTests" */;
+			buildPhases = (
+				C2DFCDD565A49FF97BC926C3A9C48EFF /* Headers */,
+				9E66D37916E7AC6FE1D24216FA4E8904 /* Sources */,
+				6765C35083B2C782EC05E489B3910378 /* Frameworks */,
+				79A8C9F0070CDBE9D70599C56599B8B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				02268504753E729F927082D202D17A61 /* PBXTargetDependency */,
+			);
+			name = "Pods-SilverCloudTests";
+			productName = "Pods-SilverCloudTests";
+			productReference = 4706FEC4F77257525BE5626C23C45B53 /* Pods_SilverCloudTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		3B577E1B5738C86902E67ED1203AC76E /* Pods-SilverCloud */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EBB89AFC51DBC4D51E4346821EAD81EB /* Build configuration list for PBXNativeTarget "Pods-SilverCloud" */;
+			buildPhases = (
+				406553B34337387B6BBE765BA1DA25E5 /* Headers */,
+				52D4E60F08C079809B0AE707CC13FFD0 /* Sources */,
+				7B79CA5944535923740EE462B77F1BBB /* Frameworks */,
+				2CEAF5BDD6704E5AB9C60D94BE5A5733 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A07152249F5E678F6B01CD25876641B7 /* PBXTargetDependency */,
+			);
+			name = "Pods-SilverCloud";
+			productName = "Pods-SilverCloud";
+			productReference = 7F29BAC867FAAEA5ED6F3B5E2FC5020F /* Pods_SilverCloud.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = A602438F29264F99DF643E637F2A2C0B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3B577E1B5738C86902E67ED1203AC76E /* Pods-SilverCloud */,
+				3AAED5D1C79506009B5048819E8EF655 /* Pods-SilverCloudTests */,
+				3653B0E65CD0D4A0BC44D147627D2FBC /* Pods-Watch-app */,
+				2C656C435866349EDD6C26AD21773620 /* Pods-Watch-app Extension */,
+				192AEFA366AAFE1F45B918C022FE489C /* SimpleKeychain */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CEAF5BDD6704E5AB9C60D94BE5A5733 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5BEE9D6E18FA82766FDCDBBD12FA57D8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		683314E0687DBBE4921B49D6FCE4E70D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79A8C9F0070CDBE9D70599C56599B8B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9FC6AA0E18654F22AE4DF8B7F7C29106 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		10476431B5B9002367DB55D68C9540C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4FB1FA3E186DD63EEEF808CAF6FDA34 /* Pods-Watch-app-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52D4E60F08C079809B0AE707CC13FFD0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3349E74822D04F4DC3A3DEEF3F608978 /* Pods-SilverCloud-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9626DC5776B7E2D6A3CA83916C17D617 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				392A5ED278DBDC449C77C0067E70F17A /* A0SimpleKeychain+KeyPair.m in Sources */,
+				8C86A13330C35B4C5D686689F74432CE /* A0SimpleKeychain.m in Sources */,
+				15A59E0DF447FBA57754150A415F0D65 /* SimpleKeychain-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9E66D37916E7AC6FE1D24216FA4E8904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2E7ADCF8480C92A2E3BE1B67EB29904E /* Pods-SilverCloudTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6B114C42CA4DFCBBB3C99DA4D9D26FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A2695DD029D6246C209220F39778C4 /* Pods-Watch-app Extension-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02268504753E729F927082D202D17A61 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-SilverCloud";
+			target = 3B577E1B5738C86902E67ED1203AC76E /* Pods-SilverCloud */;
+			targetProxy = A89C6B7C345E42EDB18B3BCC6F401F84 /* PBXContainerItemProxy */;
+		};
+		A07152249F5E678F6B01CD25876641B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SimpleKeychain;
+			target = 192AEFA366AAFE1F45B918C022FE489C /* SimpleKeychain */;
+			targetProxy = E26A483FE60BF99FEEC943D7ED6193BF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		01F7F62417AD1802FAB4A913327FD492 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5716C109EF3073C0EBD015D9A7ABE9F3 /* SimpleKeychain.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SimpleKeychain;
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		18DA341076DE4490658E1D2CAB16F5FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5716C109EF3073C0EBD015D9A7ABE9F3 /* SimpleKeychain.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SimpleKeychain/SimpleKeychain-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SimpleKeychain/SimpleKeychain.modulemap";
+				PRODUCT_MODULE_NAME = SimpleKeychain;
+				PRODUCT_NAME = SimpleKeychain;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		24F40AEC26960DA5709F1B7EF34C583E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 04AE0D454216CE501F4E539ACE506ECB /* Pods-SilverCloudTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SilverCloudTests/Pods-SilverCloudTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SilverCloudTests/Pods-SilverCloudTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		45C90EAD1B04AE64765EC3A4AFE6C03F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AEF71896F982F1DFCF1353D677627F0C /* Pods-SilverCloud.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SilverCloud/Pods-SilverCloud-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SilverCloud/Pods-SilverCloud.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6F6223A8CE10614EAC925766FEEE6CF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		7D529D9A83E9945FBB61901112F5957E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DB67EF726C753D79FE49838022304525 /* Pods-Watch-app.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Watch-app/Pods-Watch-app-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watch-app/Pods-Watch-app.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		A4E332323FB49396EE9DDAF77A8DDB25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A48B61794164EC679BDB74B7C01283E0 /* Pods-SilverCloud.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SilverCloud/Pods-SilverCloud-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SilverCloud/Pods-SilverCloud.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		AB85DEB0001B301622BDCA22F11082C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3006B1669466F7741533FE4D6823349 /* Pods-Watch-app Extension.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Watch-app Extension/Pods-Watch-app Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watch-app Extension/Pods-Watch-app Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		AE135D655E2CA6D29423C1615722C992 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 063A4085540745545A013A87F0F8EAF4 /* Pods-Watch-app Extension.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Watch-app Extension/Pods-Watch-app Extension-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watch-app Extension/Pods-Watch-app Extension.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		B16F5503E247801AF72CAE9989C08208 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Release;
+		};
+		B5D09FC294648A5A00C75919305DA7E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F4493295212BEDBE4C739026F6CADAB /* Pods-Watch-app.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-Watch-app/Pods-Watch-app-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-Watch-app/Pods-Watch-app.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+				WATCHOS_DEPLOYMENT_TARGET = 5.0;
+			};
+			name = Debug;
+		};
+		CD6880197AF5FF858F8824027AC4AE05 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EBD560E21F45637F8766E81B7A33A45 /* Pods-SilverCloudTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SilverCloudTests/Pods-SilverCloudTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SilverCloudTests/Pods-SilverCloudTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1300C8DA04E595AEB3AA5F626B7D390D /* Build configuration list for PBXNativeTarget "SimpleKeychain" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18DA341076DE4490658E1D2CAB16F5FB /* Debug */,
+				01F7F62417AD1802FAB4A913327FD492 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6F6223A8CE10614EAC925766FEEE6CF3 /* Debug */,
+				B16F5503E247801AF72CAE9989C08208 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8981066DF96AFCD69CD18BACD4E8508F /* Build configuration list for PBXNativeTarget "Pods-Watch-app" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5D09FC294648A5A00C75919305DA7E0 /* Debug */,
+				7D529D9A83E9945FBB61901112F5957E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9278E77374A93D0790F9F4CF7CDE180A /* Build configuration list for PBXNativeTarget "Pods-Watch-app Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB85DEB0001B301622BDCA22F11082C9 /* Debug */,
+				AE135D655E2CA6D29423C1615722C992 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C97BE778664C73AD9F049909CB87462B /* Build configuration list for PBXNativeTarget "Pods-SilverCloudTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD6880197AF5FF858F8824027AC4AE05 /* Debug */,
+				24F40AEC26960DA5709F1B7EF34C583E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EBB89AFC51DBC4D51E4346821EAD81EB /* Build configuration list for PBXNativeTarget "Pods-SilverCloud" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45C90EAD1B04AE64765EC3A4AFE6C03F /* Debug */,
+				A4E332323FB49396EE9DDAF77A8DDB25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

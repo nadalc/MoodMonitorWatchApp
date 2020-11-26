@@ -1,0 +1,960 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="17506" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="8YF-N7-UGM">
+    <device id="watch40"/>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="17500"/>
+    </dependencies>
+    <scenes>
+        <!--MM-->
+        <scene sceneID="teN-em-9gB">
+            <objects>
+                <notificationController id="X2n-1I-FSt" userLabel="MM" customClass="StaticNotificationInterfaceController" customModule="Watch_app" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="I'm feeling..." id="DXC-VL-Evg">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="MOOD_REMINDER" id="V7v-0M-WOL"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="DXC-VL-Evg" id="hQK-wz-l6S"/>
+                        <segue destination="0cQ-wl-eSg" kind="relationship" relationship="dynamicNotificationInterface" id="8i6-Vc-F9E"/>
+                        <segue destination="HHO-V2-Dyj" kind="relationship" relationship="dynamicInteractiveNotificationInterface" id="7fA-qc-TYY"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="-1915" y="495"/>
+        </scene>
+        <!--Mood_Selector-->
+        <scene sceneID="2zM-ii-274">
+            <objects>
+                <controller identifier="MoodSelectorInterfaceController" id="RF4-If-H0c" userLabel="Mood_Selector" customClass="MoodSelectorInterfaceController" customModule="Watch_app" customModuleProvider="target">
+                    <items>
+                        <group width="134" alignment="center" id="HcO-kA-ctc">
+                            <items>
+                                <label alignment="center" text="I'm feeling" textAlignment="center" numberOfLines="0" id="4eD-XT-5u3">
+                                    <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="117" alignment="center" layout="overlap" id="7Pr-3B-WYq">
+                            <items>
+                                <button width="40" height="40" alignment="center" backgroundImage="mood-5" id="vwO-2J-KjY">
+                                    <connections>
+                                        <action selector="sunPressed" destination="RF4-If-H0c" id="Mmw-7l-gZC"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="center" id="iWD-Al-9os">
+                            <items>
+                                <group width="17" alignment="left" id="qnu-6E-7Sw" userLabel="Separator"/>
+                                <button width="39" height="39" alignment="left" verticalAlignment="bottom" backgroundImage="mood-1" id="Vsb-Ue-UkI">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="rainPressed" destination="RF4-If-H0c" id="tlC-Fa-aDR"/>
+                                    </connections>
+                                </button>
+                                <button width="42" height="42" alignment="right" backgroundImage="mood-4" id="zkp-dL-6B2">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="sunCloudPressed" destination="RF4-If-H0c" id="uGt-9V-XpY"/>
+                                    </connections>
+                                </button>
+                                <group width="17" alignment="right" id="HOb-sJ-JME" userLabel="Separator"/>
+                            </items>
+                        </group>
+                        <group width="1" height="2" alignment="left" verticalAlignment="center" id="zR1-2D-hOg" userLabel="Separator"/>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="8FP-eS-JzJ">
+                            <items>
+                                <group width="22" alignment="left" verticalAlignment="center" id="1oH-x5-Eta" userLabel="Separator"/>
+                                <button width="39" height="39" alignment="left" verticalAlignment="center" backgroundImage="mood-2" id="tZL-FR-arm">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="multipleCloudsPressed" destination="RF4-If-H0c" id="frT-uT-c3r"/>
+                                    </connections>
+                                </button>
+                                <button width="40" height="40" alignment="right" verticalAlignment="center" backgroundImage="mood-3" id="9qi-8V-9ki">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="cloudPressed" destination="RF4-If-H0c" id="gtK-SB-Tet"/>
+                                    </connections>
+                                </button>
+                                <group width="22" alignment="right" verticalAlignment="center" id="UQx-3c-go4" userLabel="Separator"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-778" y="338"/>
+        </scene>
+        <!--Factors-->
+        <scene sceneID="G8i-iI-SRr">
+            <objects>
+                <controller identifier="FactorsSelectionInterfaceController" id="bAG-RE-2mH" userLabel="Factors" customClass="FactorsSelectionInterfaceController" customModule="Watch_app" customModuleProvider="target">
+                    <items>
+                        <group width="1" alignment="center" id="EWF-lt-HtZ">
+                            <items>
+                                <imageView width="35" height="35" alignment="center" image="mood-5" contentMode="scaleAspectFit" id="2ey-Oy-UUO"/>
+                            </items>
+                        </group>
+                        <label width="1" alignment="center" text="Was affected by:" textAlignment="center" numberOfLines="0" id="gPl-2U-Emg">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <group width="1" height="2" alignment="left" id="Rs0-s7-JK1"/>
+                        <table alignment="left" isAccessibilityElement="YES" id="l57-uU-ioR">
+                            <items>
+                                <tableRow identifier="FactorTableRowController" id="lZ3-DF-q3h" customClass="FactorTableRowController" customModule="Watch_app" customModuleProvider="target">
+                                    <group key="rootItem" width="1" alignment="left" spacing="10" id="0qD-m7-GxN">
+                                        <items>
+                                            <imageView width="30" height="30" alignment="left" verticalAlignment="center" image="sleep" contentMode="scaleAspectFit" id="SLO-0h-3ea"/>
+                                            <label height="1" alignment="left" verticalAlignment="center" text="Sleep" textAlignment="center" numberOfLines="0" id="jV5-q7-eQQ">
+                                                <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                                            </label>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="group" destination="0qD-m7-GxN" id="Fdz-L8-3RX"/>
+                                        <outlet property="icon" destination="SLO-0h-3ea" id="gaj-oo-ylA"/>
+                                        <outlet property="label" destination="jV5-q7-eQQ" id="X9g-aS-Ixy"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <separator alignment="left" id="u6p-rV-lGA"/>
+                        <button width="1" alignment="left" title="Ok" id="fey-yb-Uzn">
+                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <color key="backgroundColor" red="0.015686274510000001" green="0.87058823529999996" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                            <connections>
+                                <action selector="okBtnPressed" destination="bAG-RE-2mH" id="4q9-Ee-aJo"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="7" alignment="left" id="EsM-jv-eap"/>
+                    </items>
+                    <connections>
+                        <outlet property="moodIcon" destination="2ey-Oy-UUO" id="kPO-n8-UBL"/>
+                        <outlet property="tableOfFactors" destination="l57-uU-ioR" id="LAS-jc-G5w"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-486" y="351"/>
+        </scene>
+        <!--Help-->
+        <scene sceneID="twy-cf-0HT">
+            <objects>
+                <controller identifier="Help" id="Ibl-hO-QAZ">
+                    <items>
+                        <group width="1" height="2" alignment="left" id="ggC-lZ-dNk"/>
+                        <label alignment="left" text="To open menu," textAlignment="left" numberOfLines="0" id="xS7-zL-85U">
+                            <fontDescription key="font" type="boldSystem" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="right" text="firmly press &amp; hold on previous screen" textAlignment="left" numberOfLines="0" id="zLX-vi-OFR">
+                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                        </label>
+                        <group width="1" height="4" alignment="left" id="Bv6-iR-mbi" userLabel="blank"/>
+                        <group width="1" alignment="left" spacing="14" id="yds-06-Hhs" userLabel="Bedtime">
+                            <items>
+                                <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="bed.double.fill" catalog="system" id="Rno-sE-TvW">
+                                    <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </imageView>
+                                <label alignment="left" verticalAlignment="center" text="Bedtime" textAlignment="left" id="naf-Dc-R8D">
+                                    <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="2" alignment="left" id="eyf-rI-3A8" userLabel="blank"/>
+                        <group width="1" alignment="left" spacing="14" id="HjT-yg-wHE" userLabel="Sleep">
+                            <items>
+                                <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="moon-2" id="RFU-UY-Xm0"/>
+                                <label alignment="left" verticalAlignment="center" text="Hours slept" textAlignment="left" id="AV1-3e-S1Y">
+                                    <color key="textColor" red="1" green="0.25098039220000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="2" alignment="left" id="a3h-Vy-0Tg" userLabel="blank"/>
+                        <group width="1" alignment="left" spacing="14" id="YWA-ki-LY8" userLabel="Steps">
+                            <items>
+                                <imageView width="20" height="20" alignment="left" verticalAlignment="center" image="fast-walking" id="05c-mu-mo7"/>
+                                <label alignment="left" verticalAlignment="center" text="Steps count" textAlignment="left" id="uOp-dN-kcB">
+                                    <color key="textColor" red="0.0" green="0.97647058819999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-1320" y="921"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="F61-tJ-ddY">
+            <objects>
+                <controller identifier="Home" id="8YF-N7-UGM" customClass="HomeInterfaceController" customModule="Watch_app" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="30" alignment="left" id="ms9-hR-k0E">
+                            <items>
+                                <button width="30" height="30" alignment="right" backgroundImage="questionmark.circle.fill" catalog="system" id="sCF-vR-tzC">
+                                    <color key="backgroundColor" red="0.50196433070000002" green="0.50195449589999996" blue="0.50196117159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <connections>
+                                        <segue destination="Ibl-hO-QAZ" kind="push" id="et4-Jp-NeF"/>
+                                    </connections>
+                                </button>
+                                <label alignment="left" verticalAlignment="center" text="TODAY" textAlignment="left" numberOfLines="0" id="7pI-rk-p74">
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" height="55" alignment="center" id="13J-lt-usM" userLabel="Mood">
+                            <items>
+                                <button width="55" height="55" alignment="center" enabled="NO" backgroundImage="mood-4" id="Egb-q8-GES">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" height="2" alignment="left" id="Iig-LK-Jsn" userLabel="blank"/>
+                        <group width="1" height="63" alignment="left" id="6xX-1v-yN3">
+                            <items>
+                                <group height="100" alignment="left" layout="vertical" spacing="4" id="3cj-tq-TC2" userLabel="Bedtime">
+                                    <items>
+                                        <imageView width="16" height="17" alignment="center" verticalAlignment="bottom" image="arrow.up" catalog="system" id="W4w-B6-Dee">
+                                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <imageView width="20" height="20" alignment="center" image="bed.double.fill" catalog="system" id="QY1-nd-liF">
+                                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <label alignment="center" verticalAlignment="center" text="22:00" textAlignment="left" id="MQ6-mX-YYo">
+                                            <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group height="100" alignment="center" layout="vertical" spacing="4" id="QdY-6y-zd3" userLabel="Sleep">
+                                    <items>
+                                        <imageView width="16" height="17" alignment="center" verticalAlignment="bottom" image="arrow.up" catalog="system" id="wCd-Fi-TRY">
+                                            <color key="tintColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <imageView width="20" height="20" alignment="center" image="moon-4" id="eqg-Dx-b7d">
+                                            <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <label alignment="center" verticalAlignment="center" text="8h30" id="ooO-V9-rlx">
+                                            <color key="textColor" red="1" green="0.25098039215686274" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                    </items>
+                                </group>
+                                <group height="100" alignment="right" layout="vertical" spacing="2" id="JJ8-gt-V3l" userLabel="Exercising">
+                                    <items>
+                                        <imageView width="16" height="17" alignment="center" verticalAlignment="bottom" image="arrow.up" catalog="system" id="Laj-ff-soi">
+                                            <color key="tintColor" red="0.0" green="0.97680455450000003" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <imageView width="20" height="20" alignment="center" image="running" id="Wja-qv-8po">
+                                            <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </imageView>
+                                        <label alignment="center" verticalAlignment="center" text="12,367" id="eM1-GC-DRa">
+                                            <color key="textColor" red="0.0" green="0.97647058823529409" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                        </label>
+                                    </items>
+                                </group>
+                            </items>
+                        </group>
+                        <group width="1" height="10" alignment="center" id="RZe-5H-AbB" userLabel="blank"/>
+                        <table alignment="center" id="1u8-sP-qk9">
+                            <items>
+                                <tableRow identifier="SummaryRowController" id="JHT-XN-jez" customClass="SummaryRowController" customModule="Watch_app" customModuleProvider="target">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="7lK-k0-WN7">
+                                        <items>
+                                            <separator alignment="center" alpha="0.25" id="xkt-6f-T8L">
+                                                <color key="color" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </separator>
+                                            <group width="1" alignment="center" id="Gju-cK-t2O" userLabel="Mood">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="MON" textAlignment="left" numberOfLines="0" id="O8d-Ud-NLF" userLabel="Day">
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                    </label>
+                                                    <imageView width="33" height="32" alignment="center" verticalAlignment="center" image="mood-5" contentMode="scaleAspectFit" id="AMM-Lt-4BH"/>
+                                                </items>
+                                            </group>
+                                            <group width="1" alignment="center" verticalAlignment="center" id="NNT-Ku-udN" userLabel="Data">
+                                                <items>
+                                                    <label alignment="left" verticalAlignment="center" text="21:45" textAlignment="left" numberOfLines="0" id="CNh-o0-iNO" userLabel="Bedtime">
+                                                        <color key="textColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                    </label>
+                                                    <label alignment="center" verticalAlignment="center" text="9h00" textAlignment="center" numberOfLines="0" id="GYe-4g-dzV" userLabel="Sleep">
+                                                        <color key="textColor" red="1" green="0.25098039220000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                    </label>
+                                                    <label alignment="right" verticalAlignment="center" text="3,655" textAlignment="right" numberOfLines="0" id="J8d-xx-Nyd" userLabel="Activity">
+                                                        <color key="textColor" red="0.0" green="0.97647058819999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <fontDescription key="font" style="UICTFontTextStyleCaption2"/>
+                                                    </label>
+                                                </items>
+                                            </group>
+                                            <group width="1" height="2" alignment="left" verticalAlignment="bottom" id="dRi-M3-j1E" userLabel="blank"/>
+                                            <group width="1" alignment="center" verticalAlignment="center" id="fqc-YY-hFB" userLabel="Icons">
+                                                <items>
+                                                    <group width="5" height="1" alignment="left" verticalAlignment="center" id="9ut-7T-E9x"/>
+                                                    <imageView width="12" height="12" alignment="left" verticalAlignment="center" alpha="0.80000000000000004" image="bed.double.fill" catalog="system" id="QFE-B7-jWi">
+                                                        <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </imageView>
+                                                    <imageView width="12" height="12" alignment="center" verticalAlignment="center" alpha="0.80000000000000004" image="moon-4" id="lZF-no-z0p">
+                                                        <color key="tintColor" red="0.0" green="0.99143940210000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </imageView>
+                                                    <imageView width="11" height="13" alignment="right" verticalAlignment="center" alpha="0.80000000000000004" image="fast-walking" id="OFD-oM-KFE">
+                                                        <color key="tintColor" red="1" green="0.2527923882" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </imageView>
+                                                    <group width="5" height="1" alignment="right" verticalAlignment="center" id="kjH-AP-qpH"/>
+                                                </items>
+                                            </group>
+                                        </items>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="bedtimeLabel" destination="CNh-o0-iNO" id="Z3N-dW-oSm"/>
+                                        <outlet property="dayLabel" destination="O8d-Ud-NLF" id="LuB-rc-Zl5"/>
+                                        <outlet property="exerciseIcon" destination="OFD-oM-KFE" id="Odp-Ru-Ip9"/>
+                                        <outlet property="exerciseLabel" destination="J8d-xx-Nyd" id="pYJ-y2-VuY"/>
+                                        <outlet property="inBedIcon" destination="lZF-no-z0p" id="g5v-hr-gnw"/>
+                                        <outlet property="inBedLabel" destination="GYe-4g-dzV" id="XWf-mG-Tns"/>
+                                        <outlet property="moodImage" destination="AMM-Lt-4BH" id="Snv-Z3-EuI"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </table>
+                    </items>
+                    <menu key="menu" id="aUo-8k-ZkE">
+                        <items>
+                            <menuItem title="Log Mood" icon="add" id="NWZ-b6-0LR">
+                                <connections>
+                                    <action selector="menuItemLogMoodPressed" destination="8YF-N7-UGM" id="Lng-rL-87Q"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Tips" icon="info" id="4Zx-u9-6AV">
+                                <connections>
+                                    <action selector="menuItemTipsPressed" destination="8YF-N7-UGM" id="mWc-5c-4fl"/>
+                                </connections>
+                            </menuItem>
+                            <menuItem title="Settings" icon="more" id="TIk-AN-cQ6">
+                                <connections>
+                                    <action selector="menuItemSettingsPressed" destination="8YF-N7-UGM" id="eQD-b6-PPS"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
+                    <connections>
+                        <outlet property="bedtimeArrow" destination="W4w-B6-Dee" id="y0E-3d-G9k"/>
+                        <outlet property="bedtimeLabel" destination="MQ6-mX-YYo" id="7xW-Tn-N06"/>
+                        <outlet property="exerciseArrow" destination="Laj-ff-soi" id="DwB-a6-6vi"/>
+                        <outlet property="exerciseIcon" destination="Wja-qv-8po" id="dfN-W7-m6q"/>
+                        <outlet property="exerciseLabel" destination="eM1-GC-DRa" id="vuf-rE-4cS"/>
+                        <outlet property="inBedArrow" destination="wCd-Fi-TRY" id="P5g-Gf-Mig"/>
+                        <outlet property="inBedIcon" destination="eqg-Dx-b7d" id="khl-zK-i0i"/>
+                        <outlet property="moodBtn" destination="Egb-q8-GES" id="53g-i1-Vz7"/>
+                        <outlet property="sleepLabel" destination="ooO-V9-rlx" id="aU6-zb-zZP"/>
+                        <outlet property="summaryTable" destination="1u8-sP-qk9" id="BtY-X7-I4s"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-1320" y="496"/>
+        </scene>
+        <!--MM-->
+        <scene sceneID="JWG-c9-SBl">
+            <objects>
+                <controller id="0cQ-wl-eSg" userLabel="MM" customClass="DynamicNotificationInterfaceController" customModule="Watch_app" customModuleProvider="target">
+                    <items>
+                        <label alignment="left" text="How are you feeling?" id="yT1-8S-Wuj">
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-1915" y="837"/>
+        </scene>
+        <!--Menu-->
+        <scene sceneID="0hg-5i-TKd">
+            <objects>
+                <controller identifier="Menu" id="87M-pR-Mdy">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="Image" id="ryf-03-JlU"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-1049" y="333"/>
+        </scene>
+        <!--MM-->
+        <scene sceneID="GqU-Sx-cwX">
+            <objects>
+                <controller id="HHO-V2-Dyj" userLabel="MM" customClass="InteractiveNotificationInterfaceController" customModule="Watch_app" customModuleProvider="target">
+                    <items>
+                        <group width="117" alignment="center" layout="overlap" id="MtT-eh-2kj">
+                            <items>
+                                <button width="35" height="35" alignment="center" backgroundImage="mood-5" id="aW6-xG-q4I">
+                                    <connections>
+                                        <action selector="sunPicked" destination="HHO-V2-Dyj" id="dEN-3e-5hI"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" verticalAlignment="center" id="REY-JH-AbB">
+                            <items>
+                                <group width="17" alignment="left" id="gAP-n0-tfd" userLabel="Separator"/>
+                                <button width="39" height="39" alignment="right" backgroundImage="mood-4" id="pyf-XK-0Ic">
+                                    <connections>
+                                        <action selector="sunCloudPicked" destination="HHO-V2-Dyj" id="lf6-r7-ZMv"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="35" alignment="left" verticalAlignment="bottom" backgroundImage="mood-1" id="d4k-nN-MRj">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="rainPicked" destination="HHO-V2-Dyj" id="vFB-FV-jQ1"/>
+                                    </connections>
+                                </button>
+                                <group width="17" alignment="right" id="fui-ZO-w9f" userLabel="Separator"/>
+                            </items>
+                        </group>
+                        <group width="1" height="2" alignment="left" verticalAlignment="center" id="yYA-2C-4ZK" userLabel="Separator"/>
+                        <group width="1" alignment="center" verticalAlignment="bottom" id="TtC-ku-EyF">
+                            <items>
+                                <group width="22" alignment="left" verticalAlignment="center" id="HUO-o2-Gvq" userLabel="Separator"/>
+                                <button width="35" height="35" alignment="left" verticalAlignment="center" backgroundImage="mood-2" id="YZd-FU-NuX">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="rainCloudPicked" destination="HHO-V2-Dyj" id="r0m-mj-DtO"/>
+                                    </connections>
+                                </button>
+                                <button width="35" height="35" alignment="right" verticalAlignment="center" backgroundImage="mood-3" id="CCM-su-YHz">
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <connections>
+                                        <action selector="cloudPicked" destination="HHO-V2-Dyj" id="Tht-vu-ZRE"/>
+                                    </connections>
+                                </button>
+                                <group width="22" alignment="right" verticalAlignment="center" id="6jh-n1-LCK" userLabel="Separator"/>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-1638" y="496"/>
+        </scene>
+        <!--Tips-->
+        <scene sceneID="DqS-fI-oen">
+            <objects>
+                <controller identifier="TipInterfaceController" contentMode="scaleAspectFill" id="dFA-jC-6sO" userLabel="Tips" customClass="TipInterfaceController" customModule="Watch_app" customModuleProvider="target">
+                    <items>
+                        <group width="1" height="100" alignment="left" id="RSR-2c-utO">
+                            <items>
+                                <label width="1" height="100" alignment="center" verticalAlignment="center" text="Tip 1: Some helpful text here" textAlignment="center" numberOfLines="0" id="3Wv-Gj-FXh" userLabel="VisibleLabel">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <fontDescription key="font" type="system" pointSize="17"/>
+                                </label>
+                            </items>
+                        </group>
+                        <button alignment="center" verticalAlignment="bottom" id="9LH-Yi-P59">
+                            <group key="contentGroup" width="1" alignment="left" id="fAJ-XR-DPJ">
+                                <items>
+                                    <imageView width="65" height="65" alignment="center" verticalAlignment="center" image="plant3" id="bcF-k9-9GS">
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </imageView>
+                                </items>
+                            </group>
+                            <connections>
+                                <action selector="pressTipButton" destination="dFA-jC-6sO" id="tfE-PG-weU"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <edgeInsets key="margins" left="5" right="5" top="5" bottom="0.0"/>
+                    <connections>
+                        <outlet property="animatedImage" destination="bcF-k9-9GS" id="fSP-VN-Y8E"/>
+                        <outlet property="tipButton" destination="9LH-Yi-P59" id="45N-ng-T4P"/>
+                        <outlet property="tipTextLabel" destination="3Wv-Gj-FXh" id="iTh-ta-F8b"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-1049" y="649"/>
+        </scene>
+        <!--Save-->
+        <scene sceneID="EyD-HQ-iMz">
+            <objects>
+                <controller identifier="SettingsInterfaceController" title="Save" id="7k7-NL-og0" customClass="SettingsInterfaceController" customModule="Watch_app" customModuleProvider="target">
+                    <items>
+                        <label width="1" alignment="left" text="Schedule Reminders" textAlignment="left" numberOfLines="0" id="eZP-Nk-Fgt">
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <switch width="1" height="35" alignment="right" value="YES" title="9:00-12:00" id="I28-xD-G3I">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                            <connections>
+                                <action selector="switch9To12Updated:" destination="7k7-NL-og0" id="8Oi-da-SnZ"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" height="35" alignment="right" title="12:00-16:00" id="V30-9U-OaQ">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                            <connections>
+                                <action selector="switch12To16Updated:" destination="7k7-NL-og0" id="sgA-7X-Qfj"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" height="35" alignment="right" value="YES" title="16:00-20:00" id="m68-68-yPG">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                            <connections>
+                                <action selector="switch16To20Updated:" destination="7k7-NL-og0" id="eJl-zA-o4Z"/>
+                            </connections>
+                        </switch>
+                        <switch width="1" height="35" alignment="right" verticalAlignment="center" title="20:00-23:00" id="1HU-gj-K76">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                            <connections>
+                                <action selector="switch20To23Updated:" destination="7k7-NL-og0" id="yHB-lH-aRV"/>
+                            </connections>
+                        </switch>
+                    </items>
+                    <connections>
+                        <outlet property="switch12To16" destination="V30-9U-OaQ" id="t4v-1a-yTy"/>
+                        <outlet property="switch16To20" destination="m68-68-yPG" id="GiD-U2-ugK"/>
+                        <outlet property="switch20To23" destination="1HU-gj-K76" id="szC-Ay-Vp1"/>
+                        <outlet property="switch9To12" destination="I28-xD-G3I" id="BCS-rH-PaY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-778" y="660"/>
+        </scene>
+        <!--bedBeforeMidnight3Row-->
+        <scene sceneID="14H-8n-zxf">
+            <objects>
+                <controller identifier="bedBeforeMidnight3Row" id="c9B-dc-lT3">
+                    <items>
+                        <label width="1" alignment="left" text="3-day Streak!" textAlignment="center" numberOfLines="0" id="TM7-sZ-Fp9">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="bed-moon" id="EMx-dg-Koq">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Well done!" textAlignment="center" numberOfLines="0" id="sMN-VU-Ec4">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Bed before midnight each day" textAlignment="center" numberOfLines="0" id="vri-2B-s62">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <group width="1" height="7" alignment="left" verticalAlignment="bottom" id="Leo-Rf-dIo" userLabel="blank"/>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Mainting a sleep routine by sleeping and waking at a regular time each day." textAlignment="left" numberOfLines="0" id="ULA-Up-mYh">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-1029" y="1052"/>
+        </scene>
+        <!--moods3ThisWeek-->
+        <scene sceneID="ed2-ue-Ork">
+            <objects>
+                <controller identifier="moods3ThisWeek" id="Cda-jI-zhu">
+                    <items>
+                        <label width="1" alignment="left" text="3-log Streak!" textAlignment="center" numberOfLines="0" id="nee-hL-OcW">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="award" id="lXU-qH-qbr">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Way to go!" textAlignment="center" numberOfLines="0" id="YhL-hy-gvJ">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="3 moods logged this week" textAlignment="center" numberOfLines="0" id="SL4-2b-dfA">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <group width="1" height="7" alignment="left" verticalAlignment="bottom" id="N3v-le-AeW" userLabel="blank"/>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="huV-2L-oc2">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-778" y="1057"/>
+        </scene>
+        <!--moods30-->
+        <scene sceneID="3PG-88-AC4">
+            <objects>
+                <controller identifier="moods30" id="ftT-6C-Bu6">
+                    <items>
+                        <label width="1" alignment="left" text="30 moods!" textAlignment="center" numberOfLines="0" id="zie-ea-gld">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="moods30" id="94n-Ec-c2H">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Way to go!" textAlignment="center" numberOfLines="0" id="G9A-6z-hMv">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="30 moods logged" textAlignment="center" numberOfLines="0" id="0tW-Dh-OXs">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="KwF-aN-3fw">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-806" y="1503"/>
+        </scene>
+        <!--moods50-->
+        <scene sceneID="JuG-ie-bEd">
+            <objects>
+                <controller identifier="moods50" id="H4f-V8-hAm">
+                    <items>
+                        <label width="1" alignment="left" text="50 moods!" textAlignment="center" numberOfLines="0" id="azx-ec-nY0">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="moods50" id="xaX-Yb-iLj">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Well done!" textAlignment="center" numberOfLines="0" id="NRs-2k-yqp">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="50 moods logged" textAlignment="center" numberOfLines="0" id="52E-Fn-4hN">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="63X-GY-DL5">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-575" y="1503"/>
+        </scene>
+        <!--moods70-->
+        <scene sceneID="5eZ-j6-VNJ">
+            <objects>
+                <controller identifier="moods70" id="Ccg-ZR-THZ">
+                    <items>
+                        <label width="1" alignment="left" text="70 moods!" textAlignment="center" numberOfLines="0" id="eWe-hR-VbQ">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="moods70" id="Io6-aQ-2Jo">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" height="21" alignment="center" verticalAlignment="center" text="Excellent!" textAlignment="center" numberOfLines="0" id="fV1-7I-xkc">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="70 moods logged" textAlignment="center" numberOfLines="0" id="h8d-uK-9jN">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="Y88-Hh-CbC">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-346" y="1503"/>
+        </scene>
+        <!--moods100-->
+        <scene sceneID="kXP-sf-9VD">
+            <objects>
+                <controller identifier="moods100" id="eXW-e1-FQT">
+                    <items>
+                        <label width="1" alignment="left" text="100 moods!" textAlignment="center" numberOfLines="0" id="4AP-my-5sS">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="moods100" id="lWf-8e-Qaq">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Congratulations!" textAlignment="center" numberOfLines="0" id="Trj-d6-JnL">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="100 moods logged" textAlignment="center" numberOfLines="0" id="hzv-IH-6aI">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="ffA-q4-SLD">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-108" y="1503"/>
+        </scene>
+        <!--moods15-->
+        <scene sceneID="vRY-7G-1pq">
+            <objects>
+                <controller identifier="moods15" id="YkB-KB-d0E">
+                    <items>
+                        <label width="1" alignment="left" text="15 moods!" textAlignment="center" numberOfLines="0" id="eRx-pn-iOs">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="moods15" id="yoh-aA-ScE">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Keep it up!" textAlignment="center" numberOfLines="0" id="Rcq-aS-4CX">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="15 moods logged" textAlignment="center" numberOfLines="0" id="KQ2-pe-FZd">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="RlD-cJ-cMK">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-1029" y="1503"/>
+        </scene>
+        <!--moodsPast2Weeks-->
+        <scene sceneID="6fI-17-VrN">
+            <objects>
+                <controller identifier="moodsPast2Weeks" id="2ua-bv-DJh">
+                    <items>
+                        <label width="1" alignment="left" text="2-week Streak!" textAlignment="center" numberOfLines="0" id="vBd-0d-qpZ">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="award" id="Seg-W0-F4T">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Keep it up!" textAlignment="center" numberOfLines="0" id="rKV-B1-n9y">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Moods logged in the past 2 weeks" textAlignment="center" numberOfLines="0" id="hfc-67-On5">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="C4A-oX-aZh">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-311" y="1044"/>
+        </scene>
+        <!--moodsPast3Weeks-->
+        <scene sceneID="AWV-5x-lSh">
+            <objects>
+                <controller identifier="moodsPast3Weeks" id="cTs-nR-YsG">
+                    <items>
+                        <label width="1" alignment="left" text="3-week Streak!" textAlignment="center" numberOfLines="0" id="Cmo-AQ-wqR">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="award" id="tpV-Eg-3Lo">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Well done!" textAlignment="center" numberOfLines="0" id="ita-mm-jYB">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="2UJ-w6-rx5">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Moods logged in the past 3 weeks" textAlignment="center" numberOfLines="0" id="GQ9-Sl-ojF">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-86" y="1048"/>
+        </scene>
+        <!--moodsPast4Weeks-->
+        <scene sceneID="T8I-Vr-qtA">
+            <objects>
+                <controller identifier="moodsPast4Weeks" id="s8r-6r-e1j">
+                    <items>
+                        <label width="1" alignment="left" text="4-week Streak!" textAlignment="center" numberOfLines="0" id="X8G-4g-ngR">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="award" id="gaZ-vw-9oq">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Well done!" textAlignment="center" numberOfLines="0" id="ZWz-UH-FxO">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="rfG-c2-aY4">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Moods logged in the past 4 weeks" textAlignment="center" numberOfLines="0" id="3q4-mu-r9X">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="124" y="1048"/>
+        </scene>
+        <!--moodsPast5Weeks-->
+        <scene sceneID="y6q-Ae-49f">
+            <objects>
+                <controller identifier="moodsPast5Weeks" id="xfd-7e-fQ6">
+                    <items>
+                        <label width="1" alignment="left" text="5-week Streak!" textAlignment="center" numberOfLines="0" id="QhX-0T-s2A">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="award" id="LVu-Ll-8e9">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Excellent!" textAlignment="center" numberOfLines="0" id="1N7-oM-fwm">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="mdo-kq-vM2">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Moods logged in the past 5 weeks" textAlignment="center" numberOfLines="0" id="zeD-Af-F4L">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="357" y="1044"/>
+        </scene>
+        <!--moodsPast6Weeks-->
+        <scene sceneID="9gW-ds-vMJ">
+            <objects>
+                <controller identifier="moodsPast6Weeks" id="90S-Ds-uRW">
+                    <items>
+                        <label width="1" alignment="left" text="6-week Streak!" textAlignment="center" numberOfLines="0" id="wnJ-JC-blc">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="award" id="B7J-7d-jou">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Congratulations!" textAlignment="center" numberOfLines="0" id="hJT-Fj-673">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="fvd-MR-vDd">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Moods logged in the past 6 weeks" textAlignment="center" numberOfLines="0" id="Grk-bb-rEy">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="606" y="1043"/>
+        </scene>
+        <!--moodsPast7Weeks-->
+        <scene sceneID="xh5-ah-yrh">
+            <objects>
+                <controller identifier="moodsPast7Weeks" id="ETs-10-blr">
+                    <items>
+                        <label width="1" alignment="left" text="7-week Streak!" textAlignment="center" numberOfLines="0" id="3qi-aC-1ZU">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="award" id="ID6-Fv-9Tg">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Brilliant!" textAlignment="center" numberOfLines="0" id="2zl-Dp-xGC">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="h0P-hr-DY6">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Moods logged in the past 7 weeks" textAlignment="center" numberOfLines="0" id="3Hz-Sn-tRS">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="842" y="1042"/>
+        </scene>
+        <!--moods7DaysThisWeek-->
+        <scene sceneID="3OR-Vr-rm5">
+            <objects>
+                <controller identifier="moods7DaysThisWeek" id="Gpm-fg-omJ">
+                    <items>
+                        <label width="1" alignment="left" text="7-log Streak!" textAlignment="center" numberOfLines="0" id="0l9-SU-B0T">
+                            <color key="textColor" red="0.0" green="1" blue="0.94389232229999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <fontDescription key="font" style="UICTFontTextStyleTitle3"/>
+                        </label>
+                        <imageView width="70" height="70" alignment="center" image="award" id="3Fu-I5-xfy">
+                            <color key="tintColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </imageView>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Well done!" textAlignment="center" numberOfLines="0" id="5bI-ps-FK4">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="17"/>
+                        </label>
+                        <label width="1" alignment="center" verticalAlignment="center" text="Moods logged each day of the week" textAlignment="center" numberOfLines="0" id="1QT-Gz-8OO">
+                            <color key="textColor" red="0.99942404029999998" green="0.90196078430000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                        <group width="1" height="7" alignment="left" verticalAlignment="bottom" id="hTl-Yu-gBz" userLabel="blank"/>
+                        <label width="1" alignment="left" verticalAlignment="bottom" text="Log your mood often to build an accurate picture of how you are feeling." textAlignment="left" numberOfLines="0" id="ZoM-u1-S2I">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="font" type="system" pointSize="15"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-538" y="1049"/>
+        </scene>
+    </scenes>
+    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+    <resources>
+        <image name="Image" width="130" height="152"/>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
+        <image name="award" width="512" height="512"/>
+        <image name="bed-moon" width="464" height="463"/>
+        <image name="bed.double.fill" catalog="system" width="128" height="82"/>
+        <image name="fast-walking" width="214" height="214"/>
+        <image name="mood-1" width="256" height="256"/>
+        <image name="mood-2" width="256" height="256"/>
+        <image name="mood-3" width="256" height="256"/>
+        <image name="mood-4" width="256" height="256"/>
+        <image name="mood-5" width="256" height="256"/>
+        <image name="moods100" width="512" height="512"/>
+        <image name="moods15" width="512" height="512"/>
+        <image name="moods30" width="512" height="512"/>
+        <image name="moods50" width="512" height="512"/>
+        <image name="moods70" width="512" height="512"/>
+        <image name="moon-2" width="287" height="329"/>
+        <image name="moon-4" width="287" height="329"/>
+        <image name="plant3" width="500" height="500"/>
+        <image name="questionmark.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="running" width="214" height="214"/>
+        <image name="sleep" width="270" height="270"/>
+    </resources>
+</document>

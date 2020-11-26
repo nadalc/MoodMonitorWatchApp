@@ -1,0 +1,16 @@
+syntax:glob
+*.orig
+.project
+.pydevproject
+.DS_Store
+Thumbs.db
+*.sublime-project
+*.sublime-workspace
+ghostdriver.log
+npm-debug.log
+.idea/
+AAA*
+aaa*
+0ld*
+Old*
+aaa*

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ServicesViewCell" rowHeight="50" id="KGk-i7-Jjw" customClass="ServicesViewCell" customModule="SilverCloud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="11W-LA-psh" userLabel="Services">
+                        <rect key="frame" x="26" y="-2" width="268" height="52"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfM-gE-znL">
+                                <rect key="frame" x="31" y="26" width="182" height="0.0"/>
+                                <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="16"/>
+                                <color key="textColor" red="0.3803921569" green="0.37647058820000001" blue="0.35686274509999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView hidden="YES" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="check_circle" translatesAutoresizingMaskIntoConstraints="NO" id="rRJ-HX-zSr">
+                                <rect key="frame" x="223" y="14" width="24" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="24" id="IfE-Pt-fTi"/>
+                                    <constraint firstAttribute="height" constant="24" id="zAI-d8-QKN"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SIo-B5-4oo" userLabel="separator">
+                                <rect key="frame" x="0.0" y="51" width="268" height="1"/>
+                                <color key="backgroundColor" red="0.91764705882352937" green="0.91764705882352937" blue="0.91764705882352937" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="m0F-WQ-nVI"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SIo-B5-4oo" secondAttribute="bottom" id="FDa-4W-9qm"/>
+                            <constraint firstAttribute="trailing" secondItem="SIo-B5-4oo" secondAttribute="trailing" id="LaN-ww-dDf"/>
+                            <constraint firstItem="SIo-B5-4oo" firstAttribute="leading" secondItem="11W-LA-psh" secondAttribute="leading" id="NOs-2L-lr0"/>
+                            <constraint firstItem="nfM-gE-znL" firstAttribute="leading" secondItem="11W-LA-psh" secondAttribute="leading" constant="31" id="Rk3-GJ-aYA"/>
+                            <constraint firstItem="rRJ-HX-zSr" firstAttribute="leading" secondItem="nfM-gE-znL" secondAttribute="trailing" constant="10" id="UFo-jK-eBD"/>
+                            <constraint firstAttribute="trailing" secondItem="rRJ-HX-zSr" secondAttribute="trailing" constant="21" id="Xm0-lw-qmk"/>
+                            <constraint firstItem="rRJ-HX-zSr" firstAttribute="centerY" secondItem="nfM-gE-znL" secondAttribute="centerY" id="fgc-wS-3AW"/>
+                            <constraint firstItem="nfM-gE-znL" firstAttribute="centerY" secondItem="11W-LA-psh" secondAttribute="centerY" id="t3p-Vt-sUb"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="11W-LA-psh" secondAttribute="trailing" constant="26" id="6VJ-Md-9Ec"/>
+                    <constraint firstItem="11W-LA-psh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="26" id="Of2-cS-v5m"/>
+                    <constraint firstItem="11W-LA-psh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="-2" id="YOW-8j-CHK"/>
+                    <constraint firstAttribute="bottom" secondItem="11W-LA-psh" secondAttribute="bottom" id="egR-GC-oNA"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="checkIcon" destination="rRJ-HX-zSr" id="f8c-cl-f4N"/>
+                <outlet property="separatorLine" destination="SIo-B5-4oo" id="WY6-jj-oo8"/>
+                <outlet property="serviceTitle" destination="nfM-gE-znL" id="K7g-QN-BFW"/>
+                <outlet property="servicesView" destination="11W-LA-psh" id="Ik5-5g-wWX"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="89.732142857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="check_circle" width="24" height="24"/>
+    </resources>
+</document>

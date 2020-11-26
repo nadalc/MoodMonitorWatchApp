@@ -2,7 +2,7 @@
 The files in this directory are part of the Mood Monitor Watch app.
  For more information please visit https://htd.scss.tcd.ie/mood-monitor
  
- Copyright (c) 2020, Camille Nadal & Gavin Doherty, Trinity College Dublin.
+ Copyright (C) 2020 Camille Nadal & Gavin Doherty, Trinity College Dublin.
  
  Permission is hereby granted, free of charge, to any person obtaining a copy of this software
  and associated documentation files (the "Software"), to deal in the Software without restriction,

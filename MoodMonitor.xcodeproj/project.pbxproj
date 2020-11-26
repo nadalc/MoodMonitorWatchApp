@@ -111,7 +111,7 @@
 		1CDCAE68217F248500E20EEF /* Watch-app Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Watch-app Extension.entitlements"; sourceTree = "<group>"; };
 		1CF1A101219EF2EC00FE9FF0 /* InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		34C4101225401E2E00A56580 /* MoodType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoodType.swift; sourceTree = "<group>"; };
-		3728859C1ED320A400017B83 /* SilverCloud.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilverCloud.entitlements; sourceTree = "<group>"; };
+		3728859C1ED320A400017B83 /* MoodMonitor.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodMonitor.entitlements; sourceTree = "<group>"; };
 		376E7ACD1FB33430006958EA /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		3771D2EF1ED578B00052DC64 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		37B056841FB3274A005C6E01 /* Image.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Image.xcassets; path = MoodMonitor/Image.xcassets; sourceTree = "<group>"; };
@@ -135,7 +135,7 @@
 		4CC3EA0725188B6F00A1EF37 /* Encouragement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Encouragement.swift; sourceTree = "<group>"; };
 		4CC3EA1025188BB800A1EF37 /* Mood.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mood.swift; sourceTree = "<group>"; };
 		6FE2EEF31FB0A6F800E8E7A9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
-		CFB20C66255AC128008AB2D3 /* SilverCloudRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SilverCloudRelease.entitlements; sourceTree = "<group>"; };
+		CFB20C66255AC128008AB2D3 /* MoodMonitorRelease.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MoodMonitorRelease.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,8 +199,8 @@
 		1A287F3B1A9FAE45005BAE16 /* MoodMonitor */ = {
 			isa = PBXGroup;
 			children = (
-				CFB20C66255AC128008AB2D3 /* SilverCloudRelease.entitlements */,
-				3728859C1ED320A400017B83 /* SilverCloud.entitlements */,
+				CFB20C66255AC128008AB2D3 /* MoodMonitorRelease.entitlements */,
+				3728859C1ED320A400017B83 /* MoodMonitor.entitlements */,
 				1A287F3E1A9FAE45005BAE16 /* AppDelegate.swift */,
 				1A287F401A9FAE45005BAE16 /* HomeViewController.swift */,
 				1A287F421A9FAE45005BAE16 /* Main.storyboard */,
@@ -398,7 +398,7 @@
 				TargetAttributes = {
 					1A287F381A9FAE45005BAE16 = {
 						CreatedOnToolsVersion = 6.3;
-						DevelopmentTeam = 4ZUUK8R3VH;
+						DevelopmentTeam = S8PBZ74VCC;
 						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -420,7 +420,7 @@
 					};
 					1C28089A217F1FCE00B5275E = {
 						CreatedOnToolsVersion = 10.0;
-						DevelopmentTeam = 4ZUUK8R3VH;
+						DevelopmentTeam = S8PBZ74VCC;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.ApplicationGroups.iOS = {
@@ -430,7 +430,7 @@
 					};
 					1C2808A6217F1FCF00B5275E = {
 						CreatedOnToolsVersion = 10.0;
-						DevelopmentTeam = 4ZUUK8R3VH;
+						DevelopmentTeam = S8PBZ74VCC;
 						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
@@ -720,7 +720,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4ZUUK8R3VH;
+				DEVELOPMENT_TEAM = S8PBZ74VCC;
 				INFOPLIST_FILE = MoodMonitor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -745,11 +745,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_ENTITLEMENTS = MoodMonitor/MoodMonitorRelease.entitlements;
+				CODE_SIGN_ENTITLEMENTS = MoodMonitor/MoodMonitor.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4ZUUK8R3VH;
+				DEVELOPMENT_TEAM = S8PBZ74VCC;
 				INFOPLIST_FILE = MoodMonitor/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -813,7 +813,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "Watch-app Extension/Watch-app Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4ZUUK8R3VH;
+				DEVELOPMENT_TEAM = S8PBZ74VCC;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Watch-app Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -845,7 +845,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_ENTITLEMENTS = "Watch-app Extension/Watch-app Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 4ZUUK8R3VH;
+				DEVELOPMENT_TEAM = S8PBZ74VCC;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = "Watch-app Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
@@ -878,7 +878,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4ZUUK8R3VH;
+				DEVELOPMENT_TEAM = S8PBZ74VCC;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = Watch_app_Extension;
 				INFOPLIST_FILE = "Watch-app/Info.plist";
@@ -910,12 +910,12 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = "Watch-app/Watch-appRelease.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Watch-app/Watch-app.entitlements";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4ZUUK8R3VH;
+				DEVELOPMENT_TEAM = S8PBZ74VCC;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				IBSC_MODULE = Watch_app_Extension;
 				INFOPLIST_FILE = "Watch-app/Info.plist";

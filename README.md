@@ -15,9 +15,10 @@ The files in this directory are part of the Mood Monitor Watch app.
  acknowledge its use by mentioning the name "Mood Monitor Watch app" and an appropriate
  citation of the following publication (or an updated version): "This app was developed at
  Trinity College Dublin in order to support user acceptance research. For associated
- publications, see Nadal, C., Sas, C., & Doherty, G. (2020). Technology Acceptance in Mobile
- Health: Scoping Review of Definitions, Models, and Measurement. Journal of Medical Internet
- Research, 22(7), e17256."
+ publications, see Nadal, C., Earley, C., Enrique, A., Vigano, N., Sas, C., Richards, D., 
+ Doherty, G. (2021) Integration of a smartwatch within an internet-delivered intervention 
+ for depression: Protocol for a feasibility randomized controlled trial on acceptance. 
+ Contemporary Clinical Trials, 106323."
  * The above copyright notice, the list of conditions and the following disclaimer shall be
  included in all copies or substantial portions of the Software.
  * Neither the name of Mood Monitor Watch app nor the names of its contributors may be used to
